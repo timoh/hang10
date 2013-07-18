@@ -5,100 +5,16 @@
     <meta charset="utf-8">
     <title>My First Bitstarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">   
+ 
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
-          rel="stylesheet" type="text/css">
-    <style type="text/css">
-
-      /* Large desktop */
-      @media (min-width: 980px) { 
-        body {
-         padding-top: 60px;
-        }
-       .linediv-l {
-         border-right: 1px white solid;
-        }
-       .linediv-r {
-         border-left: 1px white solid;
-       }
-      }
-
-      /* Landscape phones and down */
-      @media (max-width: 480px) { 
-       .copy {
-         padding: 2.5% 10%;
-       }
-       .linediv-l {
-         border-bottom: 1px white solid;
-       }
-       .linediv-r {
-         border-top: 1px white solid;
-       }
-      }
-
-      /* All form factors */
-
-      /* Main body and headings */
-      body{
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-      }
-      .heading, .subheading {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-        text-align: center;
-      }
-      p.lead {
-        padding-top: 1.5%;
-        font-size: 24px;
-        line-height: 30px;
-      }
-      p {
-        font-size: 18px;
-        line-height: 24px;
-      }
-
-      /* Video pitch and Action */
-      .pitch {
-        padding: 2.5% 0%;
-      }
-      .order {
-        padding: 2% 0%;
-      }
-      .actions {
-        background-color: #343434;
-        padding: 3% 0%;
-      }
-      .video, .thermometer, .order, .social, .statistics {
-        text-align: center;
-      }
-      .statistics h3, .statistics p {
-        color: white;
-      }
-
-      /* Marketing Copy and Footer */
-      .copy {
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
-        text-align: justify;
-      }
-      .asset {
-        padding: 2.5% 0%;
-      }
-      .footer {
-        color: #cccccc;
-        text-align: center;
-      }
-      .footer p {
-        font-size: 11px;
-      }
-      .footer a {
-        color: #ccccff;
-      }
-    </style>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css">  
   </head>
   <body>
 
@@ -116,9 +32,9 @@
           <a class="brand" href="#">Bitstarter</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="active"><a href="#">Hangtime.app Home</a></li>
+              <!-- <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li> -->
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -132,25 +48,31 @@
       <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
       <!-- www.google.com/fonts/specimen/Ubuntu -->
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Product</h1>
+          <h1>Hangtime.app</h1>
         </div>
       </div> 
       <div class="row-fluid subheading">
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">One sentence description.</p>
+          <p class="lead"><b>Hang out with friends right now</b>, instead of discussing it – with a one-tap app!</p>
         </div>
       </div>
-      <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+
+      <div class="row-fluid heading">
+        <div class="span12">
+          <div><img class="img-polaroid" src="list-view-header-jpg_sm.jpg"></div>
         </div>
+      </div>
+
+      <div class="row-fluid pitch">
+
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-        <div class="span5 actions">
+        <div class="span5 offset1 actions">
           <div class="span8 offset2">
             <div class="statistics">
               <div class="span4">
@@ -193,7 +115,37 @@
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
           </div>
         </div>
+
+          <div class="span5">
+            <p><b>You know that feeling when you're feeling alone or just plain bored, and have an hour or two that you'd love to just hang out but don't have anyone special in mind?</b></p> 
+
+            <p>Sending tens of SMS'es or IM's to multiple people and waiting for replies is just awkward. Foursquare doesn't help much, because people brag about having dinner with friends and crashing their dinner mid-way through wouldn't necessarily be what anyone wants either.</p>
+            </p>
+
+            <p>Couldn't there just be a way to let your friends know that you want to hang out and whoever shares the feeling lets you know?</p>
+          </div>
+
       </div>
+
+
+      <div class="row-fluid section2">
+        <div class="span5 offset1 copy copy-right">
+          <p>
+           <b>Hangtime.app</b> is just that! 
+          </p>
+
+          <p>It's a one-tap app that lets your friends know you're up for some serious hanging out – right now.</p>
+
+          <p>Using your smartphone's current location as well as your Facebook graph it gives you a shortlist of interesting people around you. Your job is just to pick the ones you'd like to hang with, and they'll get pinged.</p> 
+
+          <p>In minutes, you'll have a buddy to share a couple of brewskis or throw the frisbee with – we'll even recommend you some fun hangouts such as a hip coffee shop or a park near you, so all you need to do is show up!</p>
+
+        </div>
+        <div class="span5 asset">
+          <a href="hangtime-canvas-jpg_med.jpg"><img class="img-polaroid" src="request-jpg_sm.jpg"></a>
+        </div>
+      </div>
+
 
       <!-- Beyond this part the marketing copy begins. -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
@@ -201,95 +153,28 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" src="hangtime-canvas-jpg_sm.jpg">
         </div>
         <div class="span5 copy">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
-        </div>
-      </div>
+          <p>On the left you see the <a href="http://leancanvas.com/blog/why-lean-canvas-vs-business-model-canvas">Lean Canvas</a> that fleshes out the idea for Hangtime.app.</p>
 
-      <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
-        </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-      </div>
+          <p>The <b>Unique Value Proposition</b> (UVP) is that the users of this app are focused on just hanging out with friends, not planning future events or reminiscing of the past.</p>
 
-      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
-      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
-      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
-          <div class="span10 offset1">
-            <h3>FAQ</h3>
-            <div class="accordion" id="accordion2">
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
-                  </a>
-                </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Frequently Asked Question.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
-                  </a>
-                </div>
-                <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    A question which is commonly asked by users.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <p>Why is that important? Because when you just want to hang out, all other stuff is just noise. Are your friends down for a couple of brewskis or not? Not later, not tomorrow, but now! When you have two hours and not a minute more, idle chatter of how &quot;it would be nice to meet up some day&quot; just don't cut it!</p>
 
+          <p><b>So next time it's time to hang – use Hangtime!</b></p>
+        </div>
       </div>
 
       <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
         <div class="span12">
-          <p>This work is licensed under
-            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-              By-SA 3.0
-            </a>, without all the cruft that would otherwise be
-            put at the bottom of the page.</p>
+          <p>Copyright ©2013 Hangtime.app team</p>
         </div>
       </div>
     </div>
+
+    
   </body>
 </html>
