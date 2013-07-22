@@ -1,5 +1,90 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    .container
+      .row-fluid.heading
+        .span12
+          h1 Hang10.app
+      .row-fluid.subheading
+        .span12
+          //
+             Special typography from Bootstrap for lead paragraph. 
+          //
+             http://twitter.github.io/bootstrap/base-css.html#typography 
+          p.lead
+            b Hang out with friends right now
+            | , instead of discussing it – with a one-tap app!
+      .row-fluid.heading
+        .span12
+          div
+            img.img-polaroid(src='/images/list-view-header-jpg_sm.jpg')
+      .row-fluid.pitch
+        //
+           We define a new 'actions' div to contain statistics, order, and share buttons.
+        .span5.offset1
+          //
+             Begin LaunchRock Widget 
+          #lr-widget(rel='L0715G4F')
+          script(type='text/javascript', src='//ignition.launchrock.com/ignition-current.min.js')
+          //
+             End LaunchRock Widget 
+        .span5
+          p
+            b
+              | You know that feeling when you're feeling alone or just plain bored, and have an hour or two that you'd love spend hanging out with friends but don't have anyone special in mind?
+          p
+            | Sending tens of SMS'es or IM's to multiple people and waiting for replies is just awkward. Foursquare doesn't help much, because people use it mostly to brag about having dinner with friends – and crashing their dinner mid-way through wouldn't necessarily be what anyone wants either.
+          p
+            | Couldn't there just be a way to let your friends know that you want to hang out and whoever shares the feeling lets you know?
+      .row-fluid.section2
+        .span5.offset1.copy.copy-right
+          p
+            b Hang10.app
+            | is just that!
+          p
+            | It's a one-tap app that lets your friends know you're up for some serious hanging out – right now.
+          p
+            | Using your smartphone's current location as well as your Facebook graph it gives you a shortlist of interesting people around you. Your job is just to pick the ones you'd like to hang with, and they'll get pinged.
+          p
+            | In minutes, you'll have a buddy to share a couple of brewskis or throw the frisbee with – we'll even recommend you some fun hangouts such as a hip coffee shop or a park near you, so all you need to do is show up!
+        .span5.asset
+          img.img-polaroid(src='/images/request-jpg_sm.jpg')
+      //
+         Beyond this part the marketing copy begins. 
+      //
+         https://developer.mozilla.org/en-US/docs/Web/CSS/text-align 
+      //
+         http://twitter.github.io/bootstrap/base-css.html#images 
+      //
+         http://placehold.it 
+      .row-fluid.section1
+        .span5.offset1.asset
+          a(href='hang10-canvas-jpg_med.jpg', target='_blank')
+            img.img-polaroid(src='/images/hang10-canvas-jpg_sm.jpg')
+        .span5.copy
+          p
+            | On the left you see the
+            a(href='http://leancanvas.com/blog/why-lean-canvas-vs-business-model-canvas') Lean Canvas
+            | that fleshes out the idea for Hang10.app.
+          p
+            | The
+            b Unique Value Proposition
+            | (UVP) is that the users of this app are focused on just hanging out with friends, not planning future events or reminiscing of the past.
+          p
+            | Why is that important? Because when you just want to hang out, all other stuff is noise. Are your friends down for a couple of brewskis or not? Not later, not tomorrow, but now! When you have two hours and not a minute more, idle chatter of how "it would be nice to meet up some day" just don't cut it!
+          p
+            b So next time it's time to hang – use Hang10!
+      //
+         Not crucial, but we put this under a CC By-SA 3.0 license. 
+      //
+         http://creativecommons.org/licenses/ 
+      .row-fluid.footer
+        .span12
+          p Copyright ©2013 Hang10.app team
+    script
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-42571972-1', 'herokuapp.com');
+      ga('send', 'pageview');

@@ -5,9 +5,10 @@
 
 var express = require('express')
   , routes = require('./routes')
+  , index = require('./routes/index')
   , user = require('./routes/user')
+  , whereami = require('./routes/whereami')
   , http = require('http')
-  , fs = require('fs')
   , path = require('path');
 
 var app = express();
@@ -26,28 +27,16 @@ app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
-// if ('development' == app.get('env')) {
-//   app.use(express.errorHandler());
-// }
-
+if ('development' == app.get('env')) {
+  app.use(express.errorHandler());
+}
 
 app.configure(function(){
   app.use(express.static(__dirname + '/public'));
 });
 
-
-app.get('/', function(request, response) {
-  var buffer = new Buffer(fs.readFileSync('public/index.html'));
-  var index_html = buffer.toString();
-  response.send(index_html);
-});
-
-app.get('/whereami', function(request, response) {
-  var buffer = new Buffer(fs.readFileSync('public/whereami.html'));
-  var index_html = buffer.toString();
-  response.send(index_html);
-});
-
+app.get('/', index.show);
+app.get('/whereami', whereami.show);
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){

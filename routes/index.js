@@ -3,6 +3,6 @@
  * GET home page.
  */
 
-exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+exports.show = function(req, res){
+  res.render('index', { title: 'Hang10.app Home' });
 };
