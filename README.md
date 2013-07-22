@@ -1,5 +1,5 @@
 ## README
 
-# TODO
+Simple geolocation working at /wherami
 
-Branch launchrock deleted
+Remember to allow geoloc from your browser!
